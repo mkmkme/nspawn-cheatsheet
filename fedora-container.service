@@ -1,0 +1,6 @@
+[Unit]
+Description=My first nspawn container
+
+[Service]
+ExecStart=/usr/bin/systemd-nspawn -jbD /srv/fedora 3
+KillMode=process
